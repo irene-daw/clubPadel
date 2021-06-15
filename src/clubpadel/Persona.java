@@ -10,7 +10,19 @@ package clubpadel;
  * @author SUSANA
  */
 public class Persona {
+    
     String name;
     String dni;
-int edad;
+    int edad;
+
+    public Persona(String name, String dni, int edad) {
+        this.name = name;
+        this.dni = dni;
+        this.edad = edad;
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre: " + name + "\nDNI: " + dni + "\nEdad: " + edad;
+    }
 }
